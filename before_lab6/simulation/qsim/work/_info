@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\8200464\Desktop\labs_FPGA\Dop_zad\simulation\qsim
+vmain
+Z1 ImWh_M@6mW2?=ob`]?JQCS0
+Z2 Vfd;=9lS6EP42GJ_I[0NET2
+Z3 dC:\Users\8200464\Desktop\labs_FPGA\Dop_zad\simulation\qsim
+Z4 w1649682389
+Z5 8main.vo
+Z6 Fmain.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|main.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 j1@Q6A5TP_ZCEUmm@F>T30
+!s85 0
+Z11 !s108 1649682390.680000
+Z12 !s107 main.vo|
+!s101 -O0
+vmain_vlg_check_tst
+!i10b 1
+!s100 cVQa14TCV29Lz9kJB]G1C3
+INDd:0e]HZjRoB]F?D^k5W1
+VgH3lNE`QH1Q;BdBQfG1BL3
+R3
+R4
+Z13 8main.vt
+Z14 Fmain.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z15 !s108 1649682390.743000
+Z16 !s107 main.vt|
+Z17 !s90 -work|work|main.vt|
+!s101 -O0
+R9
+vmain_vlg_sample_tst
+!i10b 1
+Z18 !s100 P7XalM=Yg]Bdz:eoe=z000
+Z19 IIh;GW]c_@RX;hz]koegLP3
+Z20 V:k20_4mC42ZIeX;6zi=mX2
+R3
+R4
+R13
+R14
+L0 29
+R7
+r1
+!s85 0
+31
+R15
+R16
+R17
+!s101 -O0
+R9
+vmain_vlg_vec_tst
+!i10b 1
+!s100 ?H@SWMT374E7hh5ENC2m<2
+ImA]c7>ULCl@aL`J:O<dfT3
+Z21 VHZma`Q?n[z_A]1=F?<UDB3
+R3
+R4
+R13
+R14
+L0 731
+R7
+r1
+!s85 0
+31
+R15
+R16
+R17
+!s101 -O0
+R9

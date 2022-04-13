@@ -1,0 +1,147 @@
+# do lab4.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab4
+# 
+# Top level modules:
+# 	lab4
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab4_vlg_sample_tst
+# -- Compiling module lab4_vlg_check_tst
+# -- Compiling module lab4_vlg_vec_tst
+# 
+# Top level modules:
+# 	lab4_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.lab4_vlg_vec_tst 
+# Loading work.lab4_vlg_vec_tst
+# Loading work.lab4
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading work.lab4_vlg_sample_tst
+# Loading work.lab4_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ERROR! Vector Mismatch for output port LEDR[5] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port LEDR[6] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port LEDR[7] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port LEDR[8] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port LEDR[9] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port count[0] :: @time = 2000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000101
+# ERROR! Vector Mismatch for output port count[2] :: @time = 2000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000101
+# ERROR! Vector Mismatch for output port shift_rg[5] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port shift_rg[6] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port shift_rg[7] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port shift_rg[8] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port shift_rg[9] :: @time = 2000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 1111100000
+# ERROR! Vector Mismatch for output port count[1] :: @time = 2400000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000110
+# ERROR! Vector Mismatch for output port count[3] :: @time = 3200000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001000
+# ERROR! Vector Mismatch for output port HEX0[0] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX0[3] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX0[4] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX0[5] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX0[6] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX1[0] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX1[3] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX1[4] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX1[5] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port HEX1[6] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 1111001
+# ERROR! Vector Mismatch for output port check_x[0] :: @time = 5000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 0000001011
+# ERROR! Vector Mismatch for output port check_x[1] :: @time = 5000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 0000001011
+# ERROR! Vector Mismatch for output port check_x[3] :: @time = 5000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 0000001011
+# ERROR! Vector Mismatch for output port check_y[0] :: @time = 5000000.000 ps
+#      Expected value = 0000000000
+#      Real value = 0000000001
+# ERROR! Vector Mismatch for output port y_out[0] :: @time = 5000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000001
+# ERROR! Vector Mismatch for output port HEX0[2] :: @time = 5200000.000 ps
+#      Expected value = 0000000
+#      Real value = 0100100
+# ERROR! Vector Mismatch for output port check_x[2] :: @time = 5200000.000 ps
+#      Expected value = 0000000000
+#      Real value = 0000001100
+# ERROR! Vector Mismatch for output port check_y[1] :: @time = 5200000.000 ps
+#      Expected value = 0000000000
+#      Real value = 0000000010
+# ERROR! Vector Mismatch for output port y_out[1] :: @time = 5200000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000010
+# ERROR! Vector Mismatch for output port check_y[2] :: @time = 5600000.000 ps
+#      Expected value = 0000000000
+#      Real value = 0000000101
+# ERROR! Vector Mismatch for output port y_out[2] :: @time = 6000000.000 ps
+#      Expected value = 0000000
+#      Real value = 0000100
+# ERROR! Vector Mismatch for output port HEX0[1] :: @time = 6400000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010010
+# ERROR! Vector Mismatch for output port count[4] :: @time = 6400000.000 ps
+#      Expected value = 0000000
+#      Real value = 0010000
+# ERROR! Vector Mismatch for output port check_x[4] :: @time = 6800000.000 ps
+#      Expected value = 0000000000
+#      Real value = 0000010000
+#          38 mismatched vectors : Simulation failed !
+# ** Note: $finish    : lab4.vt(1622)
+#    Time: 20 us  Iteration: 0  Instance: /lab4_vlg_vec_tst/tb_out

@@ -1,0 +1,243 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+
+// DATE "01/12/2022 14:21:09"
+
+// 
+// Device: Altera EP2C20F484C7 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module lab_1_2 (
+	elect,
+	charge_battery,
+	UPS,
+	signal_sound);
+input 	elect;
+input 	charge_battery;
+output 	UPS;
+output 	signal_sound;
+
+// Design Ports Information
+// UPS	=>  Location: PIN_J1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// signal_sound	=>  Location: PIN_L8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// charge_battery	=>  Location: PIN_J4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// elect	=>  Location: PIN_J2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \charge_battery~combout ;
+wire \elect~combout ;
+wire \UPS~0_combout ;
+wire \signal_sound~0_combout ;
+
+
+// Location: PIN_J4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \charge_battery~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\charge_battery~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(charge_battery));
+// synopsys translate_off
+defparam \charge_battery~I .input_async_reset = "none";
+defparam \charge_battery~I .input_power_up = "low";
+defparam \charge_battery~I .input_register_mode = "none";
+defparam \charge_battery~I .input_sync_reset = "none";
+defparam \charge_battery~I .oe_async_reset = "none";
+defparam \charge_battery~I .oe_power_up = "low";
+defparam \charge_battery~I .oe_register_mode = "none";
+defparam \charge_battery~I .oe_sync_reset = "none";
+defparam \charge_battery~I .operation_mode = "input";
+defparam \charge_battery~I .output_async_reset = "none";
+defparam \charge_battery~I .output_power_up = "low";
+defparam \charge_battery~I .output_register_mode = "none";
+defparam \charge_battery~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_J2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \elect~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\elect~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(elect));
+// synopsys translate_off
+defparam \elect~I .input_async_reset = "none";
+defparam \elect~I .input_power_up = "low";
+defparam \elect~I .input_register_mode = "none";
+defparam \elect~I .input_sync_reset = "none";
+defparam \elect~I .oe_async_reset = "none";
+defparam \elect~I .oe_power_up = "low";
+defparam \elect~I .oe_register_mode = "none";
+defparam \elect~I .oe_sync_reset = "none";
+defparam \elect~I .operation_mode = "input";
+defparam \elect~I .output_async_reset = "none";
+defparam \elect~I .output_power_up = "low";
+defparam \elect~I .output_register_mode = "none";
+defparam \elect~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y18_N16
+cycloneii_lcell_comb \UPS~0 (
+// Equation(s):
+// \UPS~0_combout  = (\charge_battery~combout  & !\elect~combout )
+
+	.dataa(\charge_battery~combout ),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\elect~combout ),
+	.cin(gnd),
+	.combout(\UPS~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \UPS~0 .lut_mask = 16'h00AA;
+defparam \UPS~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y18_N10
+cycloneii_lcell_comb \signal_sound~0 (
+// Equation(s):
+// \signal_sound~0_combout  = (\charge_battery~combout ) # (\elect~combout )
+
+	.dataa(\charge_battery~combout ),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\elect~combout ),
+	.cin(gnd),
+	.combout(\signal_sound~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \signal_sound~0 .lut_mask = 16'hFFAA;
+defparam \signal_sound~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_J1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \UPS~I (
+	.datain(\UPS~0_combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(UPS));
+// synopsys translate_off
+defparam \UPS~I .input_async_reset = "none";
+defparam \UPS~I .input_power_up = "low";
+defparam \UPS~I .input_register_mode = "none";
+defparam \UPS~I .input_sync_reset = "none";
+defparam \UPS~I .oe_async_reset = "none";
+defparam \UPS~I .oe_power_up = "low";
+defparam \UPS~I .oe_register_mode = "none";
+defparam \UPS~I .oe_sync_reset = "none";
+defparam \UPS~I .operation_mode = "output";
+defparam \UPS~I .output_async_reset = "none";
+defparam \UPS~I .output_power_up = "low";
+defparam \UPS~I .output_register_mode = "none";
+defparam \UPS~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_L8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \signal_sound~I (
+	.datain(!\signal_sound~0_combout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(signal_sound));
+// synopsys translate_off
+defparam \signal_sound~I .input_async_reset = "none";
+defparam \signal_sound~I .input_power_up = "low";
+defparam \signal_sound~I .input_register_mode = "none";
+defparam \signal_sound~I .input_sync_reset = "none";
+defparam \signal_sound~I .oe_async_reset = "none";
+defparam \signal_sound~I .oe_power_up = "low";
+defparam \signal_sound~I .oe_register_mode = "none";
+defparam \signal_sound~I .oe_sync_reset = "none";
+defparam \signal_sound~I .operation_mode = "output";
+defparam \signal_sound~I .output_async_reset = "none";
+defparam \signal_sound~I .output_power_up = "low";
+defparam \signal_sound~I .output_register_mode = "none";
+defparam \signal_sound~I .output_sync_reset = "none";
+// synopsys translate_on
+
+endmodule

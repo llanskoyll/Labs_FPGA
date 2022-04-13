@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, D:/Quartus/Projects/lab1_test/lab1.v
+source_file = 1, D:/Quartus/Projects/lab1_test/lab1.vwf
+source_file = 1, D:/Quartus/Projects/lab1_test/lab_1_2.v
+source_file = 1, D:/Quartus/Projects/lab1_test/lab_1_2.vwf
+source_file = 1, D:/Quartus/Projects/lab1_test/db/lab1.cbx.xml
+design_name = lab_1_2
+instance = comp, \charge_battery~I , charge_battery, lab_1_2, 1
+instance = comp, \elect~I , elect, lab_1_2, 1
+instance = comp, \UPS~0 , UPS~0, lab_1_2, 1
+instance = comp, \signal_sound~0 , signal_sound~0, lab_1_2, 1
+instance = comp, \UPS~I , UPS, lab_1_2, 1
+instance = comp, \signal_sound~I , signal_sound, lab_1_2, 1

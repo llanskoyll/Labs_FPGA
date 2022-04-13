@@ -1,0 +1,11 @@
+module main(
+	input SW[9:0],
+	input KEY[3:0],
+	output LEDR[9:0]
+);
+
+assign LEDR[9:0] = SW[9:0];
+
+
+
+endmodule

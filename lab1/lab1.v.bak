@@ -1,0 +1,8 @@
+module lab1 (
+	input a,
+	input b,
+	input z,
+	output [0:7] f
+);
+	assign f = (a & b & z ^ a) | ~b | z;
+endmodule 

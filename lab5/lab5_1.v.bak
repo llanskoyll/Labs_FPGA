@@ -1,0 +1,29 @@
+module lab5_1 (
+	input CLOCK_50,
+	input EN,
+	output reg hundredth_second,
+	output reg flag,
+	output reg [19:0] data
+);
+
+initial data = 20'd0;
+initial flag = 1'd0;
+initial hundredth_second = 1'd0;
+
+always@(posedge CLOCK_50) begin // условимся что 25_99_999 = 259;
+	if(EN) begin
+		data <= data + 1;
+		if(data == 259) begin
+			data <= 20'd0;
+			flag <= 1'd1;
+		end else begin
+			flag <= 1'd0;
+		end
+	end
+end 
+
+always@(flag) begin
+	if(flag) hundredth_second <= 1'd1;
+	else hundredth_second <= 1'd0;
+end
+endmodule

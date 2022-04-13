@@ -1,0 +1,4 @@
+module lab5_2(
+	input CLOCK_50,
+	input button_was_pressed,
+);

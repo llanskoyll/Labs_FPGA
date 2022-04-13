@@ -1,0 +1,8 @@
+module lab3_2(
+	input [7:0] d,
+	output [7:0] d
+);
+
+
+
+endmodule

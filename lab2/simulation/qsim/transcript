@@ -1,0 +1,92 @@
+# do lab2.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab2
+# 
+# Top level modules:
+# 	lab2
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab2_vlg_sample_tst
+# -- Compiling module lab2_vlg_check_tst
+# -- Compiling module lab2_vlg_vec_tst
+# 
+# Top level modules:
+# 	lab2_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.lab2_vlg_vec_tst 
+# Loading work.lab2_vlg_vec_tst
+# Loading work.lab2
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading work.lab2_vlg_sample_tst
+# Loading work.lab2_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ERROR! Vector Mismatch for output port HEX0[6] :: @time = 4080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000000
+# ERROR! Vector Mismatch for output port HEX1[6] :: @time = 4080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000000
+# ERROR! Vector Mismatch for output port HEX2[6] :: @time = 4080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000000
+# ERROR! Vector Mismatch for output port HEX3[6] :: @time = 4080000.000 ps
+#      Expected value = 0000000
+#      Real value = 1000000
+# ERROR! Vector Mismatch for output port Code[3] :: @time = 4320000.000 ps
+#      Expected value = 0000
+#      Real value = 1000
+# ERROR! Vector Mismatch for output port Code[0] :: @time = 5280000.000 ps
+#      Expected value = 0000
+#      Real value = 1111
+# ERROR! Vector Mismatch for output port Code[1] :: @time = 5280000.000 ps
+#      Expected value = 0000
+#      Real value = 1111
+# ERROR! Vector Mismatch for output port Code[2] :: @time = 5280000.000 ps
+#      Expected value = 0000
+#      Real value = 1111
+# ERROR! Vector Mismatch for output port HEX0[1] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX0[2] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX0[3] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX1[1] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX1[2] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX1[3] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX2[1] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX2[2] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX2[3] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX3[1] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX3[2] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+# ERROR! Vector Mismatch for output port HEX3[3] :: @time = 5280000.000 ps
+#      Expected value = 0000000
+#      Real value = 0001110
+#          20 mismatched vectors : Simulation failed !
+# ** Note: $finish    : lab2.vt(777)
+#    Time: 8 us  Iteration: 0  Instance: /lab2_vlg_vec_tst/tb_out

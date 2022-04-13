@@ -1,0 +1,10 @@
+module lab3_1(
+	input [3:0] v,
+	output [3:0] m
+);
+
+wire z = v > 9 ? 1 : 0
+assign m[3:0] = ({4{~z}} & v[3:0]) | ({4{z}} & 0);
+
+		
+endmodule

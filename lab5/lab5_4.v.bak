@@ -1,0 +1,4 @@
+module lab5_4(
+	input CLOCK_50,
+	
+);

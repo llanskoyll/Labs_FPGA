@@ -1,0 +1,10 @@
+module lab_1_2 (
+	input turr_off_elect, // выкл.электроэнергию
+	input charge_battery, // заряд батареи
+	output UPS, // Источник бесперебойного питания
+	output signal_sound // звуковой сигнал 
+);
+
+	assign UPS = turr_off_elect & charge_battery;
+	assign signal_sound = ~charge_battery;
+endmodule

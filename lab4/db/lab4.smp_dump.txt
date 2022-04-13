@@ -1,0 +1,13 @@
+
+State Machine - |lab4|high_count
+Name high_count.1001 high_count.1000 high_count.0111 high_count.0110 high_count.0101 high_count.0100 high_count.0011 high_count.0000 high_count.0001 high_count.0010 
+high_count.0010 0 0 0 0 0 0 0 0 0 0 
+high_count.0001 0 0 0 0 0 0 0 0 1 1 
+high_count.0000 0 0 0 0 0 0 0 1 0 1 
+high_count.0011 0 0 0 0 0 0 1 0 0 1 
+high_count.0100 0 0 0 0 0 1 0 0 0 1 
+high_count.0101 0 0 0 0 1 0 0 0 0 1 
+high_count.0110 0 0 0 1 0 0 0 0 0 1 
+high_count.0111 0 0 1 0 0 0 0 0 0 1 
+high_count.1000 0 1 0 0 0 0 0 0 0 1 
+high_count.1001 1 0 0 0 0 0 0 0 0 1 

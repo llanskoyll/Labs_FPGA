@@ -1,0 +1,9 @@
+|lab_1_2
+elect => UPS.IN0
+elect => signal_sound.IN0
+charge_battery => UPS.IN1
+charge_battery => signal_sound.IN1
+UPS <= UPS.DB_MAX_OUTPUT_PORT_TYPE
+signal_sound <= signal_sound.DB_MAX_OUTPUT_PORT_TYPE
+
+
