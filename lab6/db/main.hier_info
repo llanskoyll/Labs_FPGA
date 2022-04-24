@@ -1,0 +1,26 @@
+|main
+clk => ~NO_FANOUT~
+device[0] => input_device[0].DATAIN
+device[1] => input_device[1].DATAIN
+device[2] => input_device[2].DATAIN
+device[3] => input_device[3].DATAIN
+device[4] => input_device[4].DATAIN
+device[5] => input_device[5].DATAIN
+device[6] => input_device[6].DATAIN
+device[7] => input_device[7].DATAIN
+device[8] => input_device[8].DATAIN
+device[9] => input_device[9].DATAIN
+device[10] => input_device[10].DATAIN
+input_device[0] <= device[0].DB_MAX_OUTPUT_PORT_TYPE
+input_device[1] <= device[1].DB_MAX_OUTPUT_PORT_TYPE
+input_device[2] <= device[2].DB_MAX_OUTPUT_PORT_TYPE
+input_device[3] <= device[3].DB_MAX_OUTPUT_PORT_TYPE
+input_device[4] <= device[4].DB_MAX_OUTPUT_PORT_TYPE
+input_device[5] <= device[5].DB_MAX_OUTPUT_PORT_TYPE
+input_device[6] <= device[6].DB_MAX_OUTPUT_PORT_TYPE
+input_device[7] <= device[7].DB_MAX_OUTPUT_PORT_TYPE
+input_device[8] <= device[8].DB_MAX_OUTPUT_PORT_TYPE
+input_device[9] <= device[9].DB_MAX_OUTPUT_PORT_TYPE
+input_device[10] <= device[10].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,20 @@
+module main(
+	input clk,
+	input [10:0] device,
+	output start_bit,
+	output [0:7] data,
+	output parity_bit,
+	output stop_bit,
+	output reg [3:0] current_data,
+	output status,
+);
+initial current_data = 0;
+always @(posedge clk) begin
+	for(i = 1; i < 9; i++) begin
+		if(device[i] % 2 == 0) begin
+			current_data <= current_data + 1;
+		end
+	end
+end
+
+endmodule
